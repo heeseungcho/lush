@@ -1,0 +1,53 @@
+
+/* -- 푸터 -- */
+
+.footerWrap{
+  margin: 0 5%; 
+  padding: 19px;
+  width: 90%;
+  height: 100px;
+  /* background-color: blue; */
+}
+
+.footerPos{
+  vertical-align: middle;
+}
+
+.f1st{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: red; */
+  text-align: center;
+}
+
+.fLogo{
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.fLine{
+  width: 1px; height: 30px;
+  border: 1px solid white;
+}
+
+.footerWrap h3{
+  font-size: 20px;
+}
+
+.footerWrap p{
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.footerRightMenu{
+  display: none;
+  width: 100%;
+  height: 100px;
+  padding: 7px 0;
+}
+
+.footerRightMenu p{
+  font-size: 12px;
+  text-align: center;
+}
