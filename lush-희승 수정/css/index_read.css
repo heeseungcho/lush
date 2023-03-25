@@ -1,0 +1,259 @@
+@charset "UTF_8";
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+
+.contents_wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container{
+    width: 60.6%;
+    max-width: 1180px;
+    padding: 0 auto;
+    margin: 0 auto;
+    /* background-color: orange; */
+}
+
+/* ================================== header =================================== */
+/****** 모바일 ******/
+header{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    /* padding: 20px 5%; */
+    background-color: transparent;
+}
+
+.logo{
+    position: absolute;
+    left: 5%;
+    top: 15px;
+}
+
+.logo a{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.main-wrap{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: white
+}
+
+.gnb{
+    display: flex;
+    flex-direction: column;
+}
+
+.gnb li{
+    border-bottom: 1px solid black;
+}
+
+.gnb li a{
+    padding: 14px 0 14px 5%;
+    font-size: 14px;
+    color: black;
+} 
+
+.menu-toggle-btn{
+    position: absolute;
+    right: 5%;
+    top: 25px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.menu-toggle-btn span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.menu-toggle-btn span:nth-child(2){
+    margin: 5px 0;
+}
+
+@media all and (min-width:850px){
+    body{
+        background-repeat: repeat-y;
+        background-size: 100%;
+    }
+
+    .main-wrap{
+        display: block;
+        position: absolute;
+        top: 23px;
+        right: 5%;
+        width: 360px;
+        background-color: transparent;
+        }
+        .gnb{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        }
+        .gnb > li{
+        border-bottom: none;
+        }
+        .gnb > li > a{
+        padding: 0;
+        font-size: 16px;
+        color: white;
+        }
+        .menu-toggle-btn{
+        display:none;
+        }
+    .logo{
+        left: 64px;
+    }
+    .main-wrap{
+        right: 64px;
+    }
+}
+
+
+/* ================================== main =================================== */
+/****** 모바일 ******/
+
+/****** pc ******/
+@media all and (min-width:850px){
+    .table_wrap{
+        width: 100%; 
+        margin-top: 200px;
+        margin-bottom: 150px;
+    }
+
+    table.notice_read{
+        width: 100%; 
+        border-top: 1px solid white; 
+    }
+
+    table.notice_read th{
+        text-align: left; 
+        padding: 17.5px 0; 
+        border-bottom: 1px solid white; 
+        font-size: 16px;
+        color: white; 
+        font-weight: bold;
+    }
+
+    table.notice_read td{
+        border-bottom: 1px solid white; 
+        font-size: 16px; 
+        padding: 17.5px 0;
+        color: white; 
+    }
+
+    table.notice_read td span {
+        font-weight: bold;
+    }
+
+    table.notice_read td.read{
+        line-height: 32px;
+        padding: 100px 20px;
+    }
+
+    table.notice_read td.padding_m{
+        padding: 0 30px 0 0;
+    }
+
+    table.notice_read th span.text_box, table.notice_read td span.text_box {
+        width: 70px; 
+        color: #707070; 
+        display: inline-block; 
+        font-size: 16px; 
+        padding: 0; 
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    #save_zone{
+        width: 100%; 
+        text-align: center; 
+        margin: 20px 0 150px 0;
+    }
+
+    #save{
+        float: right; 
+        display: block; 
+        padding: 0 10px 30px 0;
+    }
+
+    .btn_1 button{
+        background: white;
+        color: black; 
+        font-size: 14px; 
+        padding: 7px 20px; 
+        font-weight: 500;
+        cursor: pointer; 
+        outline: none;
+    }
+
+    .btn_1 button:hover{
+        background: black; 
+        color: white;
+    }
+}
+
+
+
+
+/* ================================== footer =================================== */
+    .footerWrap{
+    margin: 0 5%; 
+    padding: 19px;
+    width: 90%;
+    height: 100px;
+    /* background-color: blue; */
+    color: white;
+    }
+
+    .footerPos{
+    vertical-align: middle;
+    }
+
+    .f1st{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    }
+
+    .fLogo{
+    font-size: 30px;
+    line-height: 30px;
+    }
+
+    .fLine{
+    width: 1px; height: 30px;
+    border: 1px solid white;
+    }
+
+    .footerWrap h3{
+    font-size: 20px;
+    }
+
+    .footerWrap p{
+    margin-top: 10px;
+    font-size: 13px;
+    }
+
+    .footerRightMenu{
+    display: none;
+    width: 100%;
+    height: 100px;
+    padding: 7px 0;
+    }
+
+    .footerRightMenu p{
+    font-size: 12px;
+    text-align: center;
+    }
