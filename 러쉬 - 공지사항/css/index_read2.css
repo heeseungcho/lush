@@ -295,6 +295,11 @@ table.notice_read th span.text_box, table.notice_read td span.text_box {
   width: 79.164%;
   margin: 0 10.416%;
   height: 100px;
+  background-color: transparent;
+}
+
+.footerPos{
+  background-color: transparent;
 }
 
 .f1st{
@@ -303,6 +308,7 @@ table.notice_read th span.text_box, table.notice_read td span.text_box {
   width: 100%;
   text-align: left;
   margin: 30px 0;
+  background-color: transparent;
 }
 
 .fLogo{
@@ -318,7 +324,6 @@ table.notice_read th span.text_box, table.notice_read td span.text_box {
 
 .footerWrap h3{
   margin: 0 auto;
-  place-self: center;
   font-size: 20px;
 }
 
