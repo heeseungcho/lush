@@ -89,6 +89,7 @@ header{
 
 @media all and (min-width:850px){
     body{
+        background-image: url(../img/1x/Artboard\ 3.png) ;
         background-repeat: repeat-y;
         background-size: 100%;
     }
@@ -144,8 +145,9 @@ header{
 
     table.notice_list{
         width: 100%; 
+        min-width: 0;
         border-top: 1px solid #707070; 
-        border-bottom:1px solid #707070;
+        border-bottom: 1px solid #707070;
     }
 
     table.notice_list th{
@@ -156,18 +158,13 @@ header{
         color: white;
     }
 
-    .left{
-        display: inline-block;
-        max-width: 180px;
-    }
-
     table.notice_list td{
         text-align: center;
         color: white;
         white-space: nowrap;
+        padding-bottom: 30px;
         overflow: hidden;
         text-overflow: ellipsis;
-        padding-bottom: 30px;
     }
 
     table.notice_list td:nth-child(2),
@@ -179,6 +176,17 @@ header{
         display: none;
     }
 
+    td.left{
+        max-width: 180px;
+    }
+
+    .left a{
+        max-width: 180px;
+        margin: 0 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
     .order {
         display: flex;
         justify-content: space-around;
@@ -221,18 +229,19 @@ header{
         padding-bottom: 30px;
     }
         
-    .left{
-        display: inline-block;
+    td.left{
+        max-width: 100%;
+    }
+
+    .left a{
         max-width: 100%;
     }
 
     table.notice_list td{
         padding-bottom: 30px; 
+        padding: 0 17.5px 30px; 
         text-align: center;
         color: white;
-        white-space: normal;
-        overflow: auto;
-        text-overflow: unset;
     }
     
     table.notice_list td span{
@@ -274,14 +283,20 @@ header{
     width: 79.164%;
     margin: 0 10.416%;
     height: 100px;
+    background-color: transparent;
   }
   
+  .footerPos{
+    background-color: transparent;
+  }
+
   .f1st{
     display: flex;
     justify-content: space-between;
     width: 100%;
     text-align: left;
     margin: 30px 0;
+    background-color: transparent;
   }
   
   .fLogo{
