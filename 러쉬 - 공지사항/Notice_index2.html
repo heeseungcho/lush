@@ -8,28 +8,48 @@
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <title>NOTICE</title>
+        <script src="../js/jquery.js"></script>
+        <script>
+            $(function(){
+                $(".gnb").hide();
+
+                $(".menu-toggle-btn").click(function(){
+                    $(".gnb").slideToggle();
+                });
+            });
+        </script>
     </head>
 <body>
     <div id="wrapper">
             <!-------------- 헤더 영역 ------------------>
-    <header>
-        <h1 class="logo"><a href="#">LUSH</a></h1>
-        <div class="main-wrap">
-            <nav class="main-menu">
-                <ul class="gnb">
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">PRODUCT</a></li>
-                    <li><a href="qna_list.html">NOTICE</a></li>
-                    <li><a href="Order_index.html">MY PAGE</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="menu-toggle-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
+        <header>
+            <h1 class="logo"><a href="#">LUSH</a></h1>
+            <div class="main-wrap">
+                <nav class="main-menu">
+                    <ul class="gnb">
+                        <li><a href="#">STORY</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">PRODUCT</a></li>
+                        <li><a href="#">NOTICE</a></li>
+                        <li><a href="#">MY PAGE</a></li>
+                    </ul>
+                </nav>
+                <nav class="main-menu2">
+                    <ul class="PC_gnb">
+                        <li><a href="#">STORY</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">PRODUCT</a></li>
+                        <li><a href="#">NOTICE</a></li>
+                        <li><a href="#">MY PAGE</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
 
         <!-------------- 메인 영역 ------------------>
     <main>
@@ -139,20 +159,20 @@
         <footer>
         <div class="footerWrap">
             <div class="footerPos">
-            <div class="f1st">
-                <h2 class="fLogo">
-                <a href="#">LUSH</a>
-                </h2>
-                <div class="fLine"></div>
-                <h3> 고객센터 1644-2357 </h3>
-            </div>
-            <p>COPYRIGHT ⓒ LUSHKOREA.CO.LTD.ALL RIGHTS RESERVED.</p>
+                <div class="f1st">
+                    <h2 class="fLogo">
+                        <a href="#">LUSH</a>
+                    </h2>
+                    <div class="fLine"></div>
+                    <h4> 고객센터 1644-2357 </h4>
+                </div>
+            <h6>COPYRIGHT ⓒ LUSHKOREA.CO.LTD.ALL RIGHTS RESERVED.</h6>
             </div>
             <div class="footerRightMenu">
-            <p>서울 강남구 학동로336(메이트리 빌딩(matree B/D)) 1층 주식회사 러쉬코리아</p>
-            <p>사이트 운영자: 주식회사 러쉬코리아&nbsp; | &nbsp;대표이사: 우미령 </p>
-            <p>사업자 등록번호: 201-81-77964</p>
-            <p>통신판매업 신고번호: 2022-서울강남-02857&nbsp; | &nbsp;개인정보보호책임자: 신상훈</p>
+                <h6>서울 강남구 학동로336(메이트리 빌딩(matree B/D)) 1층 주식회사 러쉬코리아</h6>
+                <h6>사이트 운영자: 주식회사 러쉬코리아&nbsp; | &nbsp;대표이사: 우미령 </h6>
+                <h6>사업자 등록번호: 201-81-77964</h6>
+                <h6>통신판매업 신고번호: 2022-서울강남-02857&nbsp; | &nbsp;개인정보보호책임자: 신상훈</h6>
             </div>
         </div>
         </footer>
