@@ -29,7 +29,6 @@ header{
     width: 100%;
     height: 60px;
     /* padding: 20px 5%; */
-    background-color: transparent;
 }
 
 .logo{
@@ -45,12 +44,16 @@ header{
 }
 
 .main-wrap{
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 100%;
     width: 100%;
     z-index: 1;
     background-color: white
+}
+
+.PC_gnb{
+    display: none;
 }
 
 .gnb{
@@ -66,7 +69,11 @@ header{
     padding: 14px 0 14px 5%;
     font-size: 14px;
     color: black;
-} 
+}
+
+.gnb li a:hover{
+    color: #17b5a5;
+}
 
 .menu-toggle-btn{
     position: absolute;
@@ -89,11 +96,12 @@ header{
 
 @media all and (min-width:850px){
     body{
-        background-image: url(../img/1x/Artboard\ 3.png) ;
+        background:url(../images/p-images/Artboard\ 2.png);
+        background-color: black;
         background-repeat: repeat-y;
         background-size: 100%;
     }
-
+    
     .main-wrap{
         display: block;
         position: absolute;
@@ -101,26 +109,48 @@ header{
         right: 5%;
         width: 360px;
         background-color: transparent;
-        }
-        .gnb{
+    }
+
+    .gnb{
+        display: none;
+    }
+
+    .gnb > li{
+        display: none;
+    }
+
+    .gnb > li > a{
+        display: none;
+    }
+
+    .PC_gnb{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        }
-        .gnb > li{
+    }
+
+    .PC_gnb > li{
         border-bottom: none;
-        }
-        .gnb > li > a{
+    }
+
+    .PC_gnb > li > a{
         padding: 0;
         font-size: 16px;
         color: white;
-        }
-        .menu-toggle-btn{
+    }
+
+    .PC_gnb > li > a:hover {
+        color: #17b5a5;
+    }
+
+    .menu-toggle-btn{
         display:none;
-        }
+    }
+
     .logo{
         left: 64px;
     }
+
     .main-wrap{
         right: 64px;
     }
@@ -284,112 +314,103 @@ header{
     margin: 0 10.416%;
     height: 100px;
     background-color: transparent;
-  }
-  
-  .footerPos{
-    background-color: transparent;
-  }
+}
 
-  .f1st{
+.f1st{
     display: flex;
     justify-content: space-between;
     width: 100%;
     text-align: left;
     margin: 30px 0;
-    background-color: transparent;
-  }
-  
-  .fLogo{
+}
+
+.fLogo{
     font-size: 30px;
     line-height: 30px;
-  }
-  
-  .fLine{
+}
+
+.fLine{
     width: 1px; height: 30px;
     border: 1px solid white;
-    margin: 0 54px;
-  }
-  
-  .footerWrap h3{
-    margin: 0 auto;
+}
+
+.footerWrap h4{
     font-size: 20px;
-  }
-  
-  .footerWrap p{
+    color: white;
+}
+
+.footerWrap h6{
     margin-top: 5px;
     font-size: 13px;
-  }
-  
-  .footerRightMenu{
+    font-weight: normal;
+    color: white;
+}
+
+.footerPos h4{
+    place-self: center;
+}
+
+.footerRightMenu{
     display: none;
     width: 100%;
-    height: 150px;
+    height: 100px;
     padding: 7px 0;
-  }
-  
-  .footerRightMenu p{
+}
+
+.footerRightMenu h6{
     font-size: 12px;
     text-align: center;
-  }
+}
 
-      /* pc */
+/* pc */
 
 
-  @media all and (min-width:850px){
+@media all and (min-width:850px){
     .footerWrap{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-content: space-between;
-      height: 150px;
-      max-width: 1180px;
-      margin:0 auto
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        height: 150px;
+        max-width: 1180px;
+        margin:0 auto;
     }
     
     .f1st{
-      display: flex;
-      justify-content: left;
-      width: 100%;
-      max-width: 420px;
-      margin: 23px 0 26px 0;
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        max-width: 420px;
+        margin: 23px 0 26px 0;
     }
     
     .fLogo{
-      font-size: 30px;
-      line-height: 30px;
+        font-size: 30px;
+        line-height: 30px;
     }
     
     .fLine{
-      width: 1px; height: 30px;
-      border: 1px solid white;
-      margin: 0 30px;
+        width: 1px; height: 30px;
+        border: 1px solid white;
+        margin: 0 30px;
     }
     
-    .footerWrap h3{
-      font-size: 20px;
-      margin: 0;
-      margin-top: 5px;
+    .footerWrap h4{
+        font-size: 20px;
     }
     
-    .footerWrap p{
-      margin-top: 5px;
-      font-size: 13px;
+    .footerWrap h6{
+        margin-top: 5px;
+        font-size: 13px;
     }
     
-    .copy{
-      display: block;
-      max-width: 420px;
-    }
-
     .footerRightMenu{
-      display: block;
-      width: 100%;
-      padding-top: 20px;
-      margin-bottom: 26px;
-      place-self: center;
+        display: block;
+        width: 100%;
+        margin-bottom: 26px;
     }
     
-    .footerRightMenu p{
-      font-size: 12px;
-      text-align: right;
+    .footerRightMenu h6{
+        font-size: 12px;
+        text-align: right;
     }
-  }
+}
